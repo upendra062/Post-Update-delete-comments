@@ -44,9 +44,10 @@
                         <th scope="col">time</th>
                       </tr>
                     </thead>
-                    <tbody>
+               
 
             {% for todo in allTodo %}
+            <tbody>
           <tr>
             <th scope="row">{{loop.index}}</th>
             <td>{{todo.title}}</td>
@@ -56,12 +57,14 @@
             <td><a href="/delete/{{todo.sno}}" type="button" class="btn btn-outline-dark btn-mx-1">Delete</button>
             </td>
           </tr>
-
+        </tbody>
 
           {% endfor %}
-          {% endif %}
         </tbody>
-    </table>
+        </table>
+          {% endif %}
+        
+
 
    </div>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
